@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="" autocomplete="on">
+        <h1 class="MainHead">Payment Form</h1>
+        <hr />
+        <h2>Contact Information</h2>
+        <fieldset>
+          <label for="fname">First Name: </label>
+          <input type="text" name="fname" required placeholder="Yogesh" /><br />
+          <p>
+            Middle Name: <input type="text" name="mname" placeholder="Singh" />
+          </p>
+          <p>
+            Last Name:
+            <input type="text" name="lname" required placeholder="Bhati" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Gender</legend>
+          <p>
+            Male
+            <input type="radio" name="Gender" id="Gender" required /> Female
+            <input type="radio" name="Gender" id="Gender" required /> Other
+            <input type="radio" name="Gender" id="Gender" required />
+          </p>
+        </fieldset>
+        <p>Are you 18+ <input type="checkbox" name="18+" id="18+" /></p>
+
+        Graduated
+        <input type="checkbox" name="Graduated" id="Graduated" />
+
+        <br />
+        <br />
+        Any bank loan
+        <input type="checkbox" name="Bank loan" id="Bank loan" /><br /><br />
+        <label for="Address">Address:</label>
+        <textarea
+          name="address"
+          id="address"
+          cols="199"
+          rows="4"
+          required
+          placeholder="Enter your address"
+        ></textarea>
+
+        <p>
+          Pincode:
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="123456"
+          />
+        </p>
+        <p>
+          Email:
+          <input
+            type="email"
+            placeholder="abc@mail.com"
+            name="email"
+            id="email"
+            required
+          />
+        </p>
+        <hr />
+        <h2>Payment Information</h2>
+
+        <p>
+          Card Type:
+          <select name="card_type" id="card_type" required>
+            <option value="">--Select a card type--</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+          </select>
+        </p>
+        <!-- <input
+          type="button"
+          onclick="alert('You are filling a payment form')"
+          value="Click Me!"
+        /> -->
+        <p>
+          Card Number:
+          <input
+            type="number"
+            name="Card Number"
+            id="Card Number"
+            required
+            placeholder="1111-2222-3333-4444"
+          />
+        </p>
+        <p>
+          Expiry Date:
+          <input type="date" name="Expiry Date" id="Expiry Date" required />
+        </p>
+        <p>
+          CVV:
+          <input
+            type="password"
+            name="CVV"
+            id="CVV"
+            required
+            placeholder="123"
+          />
+        </p>
+        <input
+          type="submit"
+          value="Pay Now"
+          onclick="alert('Are yoy sure to submit this')"
+        />
+        <br />
+        <hr />
+        <input
+          type="reset"
+          value="Reset"
+          onclick="alert('All data you filled will erase')"
+        />
+        <br />
+        <br />
+        <!-- <label for="browser">browsers : </label>
+        <input list="browsers" />
+        <datalist id="browsers">
+          <option value="Internet Explorer"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist> -->
+      </form>
+    </div>
+  </body>
+</html>
