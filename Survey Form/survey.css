@@ -1,0 +1,14 @@
+body {
+  height: 100%;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+  background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+}
