@@ -27,37 +27,41 @@
       .nav {
         height: 5%;
       }
-      .footer {
-        height: 10%;
-      }
+
       .content {
         width: 20%;
         border: black solid 1px;
         background-color: blanchedalmond;
-        margin: 5px;
+        margin: 10px;
         text-align: center;
         height: 68%;
-        position: absolute;
+        float: left;
+
+        /* position: absolute; */
       }
       .main {
         width: 56%;
         border: black solid 1px;
         background-color: blanchedalmond;
-        margin: 5px;
+        margin: 10px;
         text-align: center;
+        float: left;
+
         height: 68%;
-        position: absolute;
-        margin-left: 22%;
+        /* position: absolute; */
       }
-      .left {
-        position: relative;
-        float: right;
-        height: 97%;
+      .right {
+        /* position: relative; */
+        float: left;
+        height: 68%;
       }
-      .con {
-        border: 1px white solid;
-        width: 100%;
-        height: 70%;
+      .con:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer {
+        height: 10%;
       }
     </style>
   </head>
